@@ -4,5 +4,5 @@ from django.contrib.auth.models import User
 class Account(models.Model):
     user = models.OneToOneField(User, null=True)
 
-    present = models.BooleanField(default=False)
+    present = models.BooleanField(default=False, null=True)
 
